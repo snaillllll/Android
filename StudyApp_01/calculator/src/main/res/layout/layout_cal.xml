@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="简单计算器"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right|bottom"
+                android:lines="3"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="5">
+
+                <Button
+                    android:id="@+id/btn_ce"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_columnWeight="1"
+                    android:text="CE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/btn_divide"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_columnWeight="1"
+                    android:text="CE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/btn_multiply"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_columnWeight="1"
+                    android:textColor="@color/black"
+                    android:text="CE"
+                    android:textSize="@dimen/button_font_size" />
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_columnWeight="1"
+                    android:textColor="@color/black"
+                    android:text="CE"
+                    android:textSize="@dimen/button_font_size" />
+
+            </GridLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

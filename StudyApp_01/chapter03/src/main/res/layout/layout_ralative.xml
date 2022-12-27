@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#0000ff"
+        android:text="我在中间"
+        android:textSize="19sp" />
+    <TextView
+        android:id="@+id/tv_center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我在水平中间"
+        android:textSize="19sp"
+        android:background="#00ff00"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:layout_centerVertical="true"
+        android:text="我在垂直中间"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_parent_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="#00ff00"
+        android:text="与上级左边对齐"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_parent_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与上级右边对齐"
+        android:textSize="19sp"
+        android:background="#00ff00"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_parent_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ff0000"
+        android:text="与上级顶部对齐"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_parent_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与上级底部部对齐"
+        android:textSize="19sp"
+        android:background="#00ff00"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与中间左边对齐"
+        android:textSize="19sp"
+        android:background="#00ffff"
+        android:layout_toLeftOf="@id/tv_center"
+        android:layout_alignTop="@id/tv_center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与中间右边对齐"
+        android:textSize="19sp"
+        android:background="#00ffff"
+        android:layout_toRightOf="@id/tv_center"
+        android:layout_alignTop="@id/tv_center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中间上面"
+        android:textSize="19sp"
+        android:background="#00ffff"
+        android:layout_above="@id/tv_center"
+        android:layout_alignRight="@id/tv_center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中间下面"
+        android:textSize="19sp"
+        android:background="#00ffff"
+        android:layout_below="@id/tv_center"
+        android:layout_alignLeft="@id/tv_center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水平中间下面"
+        android:textSize="19sp"
+        android:background="#00ff00"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右下角"
+        android:textSize="19sp"
+        android:background="#00ff00"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
