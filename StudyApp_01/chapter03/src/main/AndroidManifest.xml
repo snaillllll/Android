@@ -9,8 +9,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyApp_01">
         <activity
+            android:name=".RequestActivity"
+            android:exported="true"
+            android:label="@string/title_activity_request"
+            android:theme="@style/Theme.StudyApp_01.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ResponseActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TextViewActivity"
-            android:exported="true"/>
+            android:exported="true"
+            android:launchMode="standard" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

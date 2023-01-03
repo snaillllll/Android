@@ -94,4 +94,15 @@
             android:text="这里查看测试按钮的点击结果"
             android:textSize="17sp" />
     </RelativeLayout>
+    <Button
+        android:id="@+id/btn_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录成功，按返回回到桌面"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/tv_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.exemple.rui.chapter03;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -22,6 +23,8 @@ public class TextViewActivity extends AppCompatActivity implements View.OnClickL
     private Button btn_off;
     private Button btn_run;
     private TextView tv_result3;
+    private Button btn_fanhui;
+    private TextView tv_receive;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,10 +49,21 @@ public class TextViewActivity extends AppCompatActivity implements View.OnClickL
         btn_off = findViewById(R.id.btn_off);
         btn_run = findViewById(R.id.btn_run);
         tv_result3 = findViewById(R.id.tv_result3);
+        btn_fanhui = findViewById(R.id.btn_fanhui);
+        btn_fanhui.setOnClickListener(this);
         btn_on.setOnClickListener(this);
         btn_off.setOnClickListener(this);
         btn_run.setOnClickListener(this);
+        tv_receive = findViewById(R.id.tv_receive);
 
+
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null){
+            String time = bundle.getString("time");
+            String text = bundle.getString("text");
+            String desc=String.format("接收到Intent消息：\n时间：%s\n消息：%s",time,text);
+            tv_receive.setText(desc);
+        }
 
     }
 
@@ -92,6 +106,9 @@ public class TextViewActivity extends AppCompatActivity implements View.OnClickL
         }else if(v.getId()==R.id.btn_run){
             String desc = String.format("%s 您点击了按钮 %s", DateUtil.getNowTime(),((Button)v).getText());
             tv_result3.setText(desc);
+        }else if(v.getId()==R.id.btn_fanhui){
+            startActivity(new Intent(this,MainActivity.class)
+                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         }
     }
 }

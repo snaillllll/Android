@@ -1,17 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    >
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/tv_hello"
         android:layout_width="200dp"
         android:layout_height="200dp"
-android:background="@color/teal_200"
-        android:text="Jump"
+        android:background="@color/teal_200"
         android:gravity="center"
-        android:textSize="40sp"/>
+        android:text="Jump"
+        android:textSize="40sp" />
+    <Button
+        android:id="@+id/btn_dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击拨号"
+        android:textSize="17sp"/>
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击发短信"
+        android:textSize="17sp"/>
+    <Button
+        android:id="@+id/btn_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳到计算机app"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/tv_tianqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="晒晒太阳"
+        android:textSize="17sp"/>
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="向下一个Activity发送信息"
+        android:textSize="17sp"/>
+
 
 </LinearLayout>

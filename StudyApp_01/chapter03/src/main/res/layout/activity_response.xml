@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这里将显示 yes or no"
+        android:textSize="17sp"
+        />
+    <Button
+        android:id="@+id/btn_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击返回上一个Activity"
+        android:textSize="17sp"/>
+
+</LinearLayout>
