@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"/>
+    <EditText
+        android:id="@+id/et_zh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入4位数字"
+        android:inputType="number"
+        android:maxLength="4"/>
+    <EditText
+        android:id="@+id/et_cs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="改变焦点" />
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结果：未测试"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"/>
+
+
+</LinearLayout>
