@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="836px"
+    android:layout_height="486px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/popup_bg">
+
+    <TextView
+        android:layout_width="560px"
+        android:layout_height="118px"
+        android:layout_marginTop="108px"
+        android:layout_marginLeft="138px"
+        android:gravity="center"
+        android:text="自动泊车暂停，是否继续泊车？"
+        android:textColor="#FFEBEFFA"
+        android:textSize="40px"
+        />
+
+    <ImageView
+        android:id="@+id/apa_pause_continue"
+        android:layout_width="320px"
+        android:layout_height="90px"
+        android:layout_marginTop="299px"
+        android:layout_marginLeft="78px"
+        android:src="@drawable/btn_popup_highlight_nor"
+        />
+
+    <TextView
+        android:layout_width="128px"
+        android:layout_height="46px"
+        android:layout_marginTop="320px"
+        android:layout_marginLeft="174px"
+        android:text="继续泊车"
+        android:gravity="center"
+        android:textColor="#FFEBEFFA"
+        android:textSize="32px" />
+
+    <ImageView
+        android:id="@+id/apa_pause_stop"
+        android:layout_width="320px"
+        android:layout_height="90px"
+        android:layout_marginTop="299px"
+        android:layout_marginLeft="438px"
+        android:src="@drawable/btn_popup_second_nor"
+        />
+
+    <TextView
+        android:layout_width="128px"
+        android:layout_height="46px"
+        android:layout_marginTop="320px"
+        android:layout_marginLeft="534px"
+        android:gravity="center"
+        android:text="退出泊车"
+        android:textColor="#FFEBEFFA"
+        android:textSize="32px" />
+
+
+</FrameLayout>
