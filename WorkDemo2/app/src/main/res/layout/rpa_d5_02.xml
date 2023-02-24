@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <!--上部部分-->
+    <Button
+        android:id="@+id/btn_top_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_rpa_back"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_top_02"
+        app:layout_constraintBottom_toBottomOf="@id/tv_top_02"/>
+
+    <TextView
+        android:id="@+id/tv_top_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="遥控泊车"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--假设部分 后面需删除-->
+    <Button
+        android:id="@+id/btn_exc_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="异常可恢复"
+        app:layout_constraintTop_toBottomOf="@id/btn_top_01"
+        app:layout_constraintLeft_toLeftOf="@id/btn_top_01"/>
+    <Button
+        android:id="@+id/btn_exc_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="异常不可恢复"
+        app:layout_constraintLeft_toRightOf="@id/btn_exc_01"
+        app:layout_constraintTop_toTopOf="@id/btn_exc_01"/>
+    <Button
+        android:id="@+id/btn_conn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正常连接"
+        app:layout_constraintLeft_toLeftOf="@id/btn_exc_01"
+        app:layout_constraintTop_toBottomOf="@id/btn_exc_01"/>
+    <Button
+        android:id="@+id/btn_conn_false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接失败"
+        app:layout_constraintTop_toTopOf="@id/btn_conn"
+        app:layout_constraintLeft_toRightOf="@id/btn_conn"/>
+
+    <!--中间填图-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="w,1:1.58"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/ima_quickcontrol_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_top_02"/>
+
+    <!--底部部分-->
+    <TextView
+        android:id="@+id/tv_bottom_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="正在连接车辆..."
+        android:textSize="14sp"
+        android:textColor="#EBEFFA"
+        android:visibility="visible"
+        android:drawableLeft="@drawable/img_rpa_refresh"
+        android:drawablePadding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_bottom_01"/>
+
+    <TextView
+        android:id="@+id/tv_bottom_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="请选择当前泊车类型"
+        android:textColor="#EBEFFA"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bottom_02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_bottom_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_rpa_highlight_nor"
+        android:text="自动舶入"
+        android:textColor="#F0F3FD"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bottom_01"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_bottom_01" />
+
+    <Button
+        android:id="@+id/btn_bottom_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_rpa_nor"
+        android:text="退出泊车"
+        android:textColor="#F0F3FD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

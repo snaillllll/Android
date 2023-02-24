@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,36 +9,46 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_Hi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="60dp"
         android:text="Hi,尊敬的宏景用户"
         android:textSize="24sp"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="4dp"
         android:text="欢迎使用遥控泊车功能"
         android:textSize="14sp"
-        android:textColor="#F0F3FD"/>
+        android:textColor="#F0F3FD"
+        app:layout_constraintLeft_toLeftOf="@id/tv_Hi"
+        app:layout_constraintTop_toBottomOf="@id/tv_Hi"/>
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/ima_quickcontrol_bg"/>
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="w,1:1.58"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/ima_quickcontrol_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_park"/>
     <Button
         android:id="@+id/btn_park"
-        android:layout_width="315dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
         android:background="@drawable/btn_rpa_highlight_nor"
-        android:layout_gravity="center_horizontal"
         android:text="进入遥控泊车"
         android:textSize="16sp"
-        android:textColor="#F0F3FD"/>
+        android:textColor="#F0F3FD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
